@@ -1,0 +1,151 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background-color: #B22222; /* Red */
+    color: white;
+    padding: 20px;
+    border-bottom: 4px solid #8B0000; /* Darker red border */
+}
+
+/* Main Section Styling */
+main {
+    margin: 30px auto;
+    max-width: 700px;
+    background-color: #fefefe; /* Light white background */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+h2 {
+    color: #B22222; /* Red color for headings */
+}
+
+/* Store Selector and Buttons */
+#store {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 2px solid #B22222;
+    width: 100%;
+    background-color: #fff;
+    color: #B22222;
+}
+
+#store:focus {
+    outline: none;
+    border-color: #8B0000;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#find-route {
+    background-color: #B22222;
+    color: white;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#find-route:hover {
+    background-color: #8B0000;
+}
+
+#clear-route {
+    background-color: #fff;
+    color: #B22222;
+    border: 2px solid #B22222;
+    width: 100%;
+}
+
+#clear-route:hover {
+    background-color: #B22222;
+    color: white;
+}
+
+/* Item Selection and Results Section */
+#items-container {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+#route-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#route-table th, #route-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+#route-table th {
+    background-color: #B22222;
+    color: white;
+}
+
+#total-cost {
+    font-weight: bold;
+    color: #B22222;
+    font-size: 18px;
+}
+
+/* Animation for table rows */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#route-table tr.animated {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#route-table tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#route-table tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+#route-table tr:hover {
+    background-color: #ffe4e1; /* Light red on hover */
+}

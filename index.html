@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaquobi Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Yaquobi's Grocery Store Route Finder</h1>
+    </header>
+    <main>
+        <section id="store-selection">
+            <h2>Select a Store</h2>
+            <select id="store" onchange="populateItems(this.value)">
+                <option value="robinsons">Robinsons Supermarket</option>
+                <option value="hypermarket">Hypermarket</option>
+                <option value="savemore">Savemore</option>
+            </select>
+        </section>
+        <section id="item-selection">
+            <h2>Select Items</h2>
+            <div id="items-container"></div>
+        </section>
+        <section id="actions">
+            <button id="find-route">Find Route</button>
+            <button id="clear-route">Clear Route</button>
+        </section>
+        <section id="results">
+            <h2>Route Results</h2>
+            <table id="route-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Path</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
